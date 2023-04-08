@@ -3,7 +3,7 @@ package com.example.roomdatabase
 import androidx.room.*
 
 @Dao
-interface StudentDao {
+interface StudentDao { //Dao- Data Access Object
 
         @Query("SELECT * FROM student_table")
         fun getAll(): List<Student?>?
